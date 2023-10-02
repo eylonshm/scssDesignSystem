@@ -1,9 +1,21 @@
-.pTag {
-  padding: 8px;
+@layer base, utils;
+
+@layer utils {
+  .pTag {
+    padding: 8px;
+  }
 }
 
 .removeOutline {
   &:focus {
     outline: none;
+  }
+}
+
+@layer base {
+  .pTag {
+    background-color: bisque;
+    // This padding is overwrittern by the code in utils layer
+    padding: 100px;
   }
 }
