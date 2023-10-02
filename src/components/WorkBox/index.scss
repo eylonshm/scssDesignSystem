@@ -1,0 +1,9 @@
+.pTag {
+  padding: 8px;
+}
+
+.removeOutline {
+  &:focus {
+    outline: none;
+  }
+}

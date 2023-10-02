@@ -1,0 +1,27 @@
+:root {
+  --heading-font: 'Poppins', arial, sans-serif;
+  --content-font: 'Inter', arial, sans-serif;
+  --code-font: 'Source Code Pro', monospace;
+
+  $font-size-00: 12px;
+  $font-size-0: 14px;
+  $font-size-1: 16px;
+  $font-size-2: 18px;
+  $font-size-3: 20px;
+  $font-size-4: 24px;
+  $font-size-5: 28px;
+  $font-size-6: 32px;
+  $font-size-7: 36px;
+  $font-size-8: 40px;
+
+  --font-size-00: #{$font-size-00};
+  --font-size-0: #{$font-size-0};
+  --font-size-1: #{$font-size-1};
+  --font-size-2: #{$font-size-2};
+  --font-size-3: #{$font-size-3};
+  --font-size-4: #{$font-size-4};
+  --font-size-5: #{$font-size-5};
+  --font-size-6: #{$font-size-6};
+  --font-size-7: #{$font-size-7};
+  --font-size-8: #{$font-size-8};
+}

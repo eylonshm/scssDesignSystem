@@ -1,0 +1,11 @@
+:root {
+  $margin-xsmall: 4px;
+  $margin-small: 8px;
+  $margin-medium: 16px;
+  $margin-large: 24px;
+
+  --margin-xsmall: #{$margin-xsmall};
+  --margin-small: #{$margin-small};
+  --margin-medium: #{$margin-medium};
+  --margin-large: #{$margin-large};
+}

@@ -1,0 +1,13 @@
+:root {
+  $border-radius-xsmall: 4px;
+  $border-radius-small: 8px;
+  $border-radius-medium: 16px;
+  $border-radius-large: 24px;
+  $border-radius-circular: 50%;
+
+  --border-radius-xsmall: #{$border-radius-xsmall};
+  --border-radius-small: #{$border-radius-small};
+  --border-radius-medium: #{$border-radius-medium};
+  --border-radius-large: #{$border-radius-large};
+  --border-radius-circular: #{$border-radius-circular};
+}

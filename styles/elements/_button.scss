@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+.button {
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  transition: border 0.25s ease;
+  border: 1px solid transparent;
+  user-select: none;
+
+  &:hover {
+    border: 1px solid var(--color-primary);
+  }
+  &:focus {
+    outline: none;
+  }
+}
