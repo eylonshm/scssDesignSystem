@@ -6,7 +6,7 @@ const WorkBox = ({ onClick }) => {
     <div className=" ">
       <h2 className="pTag br-s mb-l fs-7">App is running.</h2>
       <p className="">You can see this text just on desktop</p>
-      <button className="button" onClick={onClick}>
+      <button className="button" onClick={onClick} data-cy="counter-inc-btn">
         Click here
       </button>
     </div>

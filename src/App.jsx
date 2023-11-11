@@ -12,7 +12,9 @@ const AnotherComponent = ({ onClick }) => {
       {console.dir(onClick)}
       <p>Text</p>
       <p>Another text</p>
-      <button onClick={onClick}>Dec</button>
+      <button onClick={onClick} data-cy="counter-dec-btn">
+        Dec
+      </button>
     </div>
   );
 };
@@ -43,7 +45,7 @@ function App() {
   return (
     <>
       <WorkBox onClick={increment} />
-      <p>Count: {count}</p>
+      <p data-cy="counter">Count: {count}</p>
       <MemoizedAnotherComp onClick={dec} />
     </>
   );
