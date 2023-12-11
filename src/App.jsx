@@ -3,6 +3,7 @@ import "../styles/_index.scss";
 import "./App.scss";
 import WorkBox from "./components/WorkBox";
 import { useCallback, useState } from "react";
+import AnotherButton from "./components/AnotherButton";
 
 // eslint-disable-next-line react/prop-types
 const AnotherComponent = ({ onClick }) => {
@@ -48,15 +49,13 @@ function App() {
   };
 
   return (
-    <>
-      <WorkBox
-        className={`app ${isDarkTheme ? "dark-theme" : "light-theme"}`}
-        onClick={increment}
-      />
+    <div className={`app ${isDarkTheme ? "dark-theme" : "light-theme"}`}>
+      <WorkBox onClick={increment} />
       <p data-cy="counter">Count: {count}</p>
       <button onClick={changeTheme}>Change Theme</button>
+      <AnotherButton text="Click" />
       <MemoizedAnotherComp onClick={dec} />
-    </>
+    </div>
   );
 }
 
