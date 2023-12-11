@@ -1,7 +1,35 @@
+$color-primary-light: #4c5d00;
+$color-secondary-light: #15ff00;
+$color-info-light: #aeffc6;
+$color-meaningful-name-light: #e4fff7;
+$color-box-shadow-light: 229 17% 26%;
+
+$color-primary-dark: #27005d;
+$color-secondary-dark: #9400ff;
+$color-info-dark: #aed2ff;
+$color-meaningful-name-dark: #e4f1ff;
+$color-box-shadow-dark: 229 17% 26%;
+
 :root {
-  --color-primary: #27005d;
-  --color-secondary: #9400ff;
-  --color-info: #aed2ff;
-  --color-meaningful-name: #e4f1ff;
-  --color-box-shadow: 229 17% 26%;
+  --color-primary: #{$color-primary-dark};
+  --color-secondary: #{$color-secondary-dark};
+  --color-info: #{$color-info-dark};
+  --color-meaningful-name: #{$color-meaningful-name-dark};
+  --color-box-shadow: #{$color-box-shadow-dark};
+}
+
+@mixin toggle-theme($theme) {
+  @if $theme == dark {
+    --color-primary: #{$color-primary-dark};
+    --color-secondary: #{$color-secondary-dark};
+    --color-info: #{$color-info-dark};
+    --color-meaningful-name: #{$color-meaningful-name-dark};
+    --color-box-shadow: #{$color-box-shadow-dark};
+  } @else {
+    --color-primary: #{$color-primary-light};
+    --color-secondary: #{$color-secondary-light};
+    --color-info: #{$color-info-light};
+    --color-meaningful-name: #{$color-meaningful-name-light};
+    --color-box-shadow: #{$color-box-shadow-light};
+  }
 }

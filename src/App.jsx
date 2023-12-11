@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
 import "../styles/_index.scss";
+import "./App.scss";
 import WorkBox from "./components/WorkBox";
 import { useCallback, useState } from "react";
 
@@ -30,6 +30,7 @@ const MemoizedAnotherComp = React.memo(
 );
 
 function App() {
+  const [isDarkTheme, setIsDarkTheme] = useState();
   const [count, setCount] = useState(0);
   const increment = () => {
     // eslint-disable-next-line no-debugger
@@ -42,10 +43,18 @@ function App() {
     setCount((count) => count - 1);
   }, [count]);
 
+  const changeTheme = () => {
+    setIsDarkTheme((dark) => !dark);
+  };
+
   return (
     <>
-      <WorkBox onClick={increment} />
+      <WorkBox
+        className={`app ${isDarkTheme ? "dark-theme" : "light-theme"}`}
+        onClick={increment}
+      />
       <p data-cy="counter">Count: {count}</p>
+      <button onClick={changeTheme}>Change Theme</button>
       <MemoizedAnotherComp onClick={dec} />
     </>
   );
