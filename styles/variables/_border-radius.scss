@@ -1,15 +1,9 @@
 @use "../abstract/" as *;
 
-$border-radius-xsmall: #{pxToRem(4)};
-$border-radius-small: #{pxToRem(8)};
-$border-radius-medium: #{pxToRem(16)};
-$border-radius-large: #{pxToRem(24)};
-$border-radius-circular: 50%;
-
 :root {
-  --border-radius-xsmall: #{$border-radius-xsmall};
-  --border-radius-small: #{$border-radius-small};
-  --border-radius-medium: #{$border-radius-medium};
-  --border-radius-large: #{$border-radius-large};
-  --border-radius-circular: #{$border-radius-circular};
+  --border-radius-xsmall: #{pxToRem(4)};
+  --border-radius-small: #{pxToRem(8)};
+  --border-radius-medium: #{pxToRem(16)};
+  --border-radius-large: #{pxToRem(24)};
+  --border-radius-circular: 50%;
 }

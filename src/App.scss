@@ -44,11 +44,14 @@
 }
 
 .app {
-  &.dark-theme {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+
+  &.darkTheme {
     @include toggle-theme(dark);
   }
 
-  &.light-theme {
+  &.lightTheme {
     @include toggle-theme(light);
   }
 }

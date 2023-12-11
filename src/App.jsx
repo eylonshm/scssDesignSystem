@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <div className={`app ${isDarkTheme ? "dark-theme" : "light-theme"}`}>
+    <div className={`app ${isDarkTheme ? "darkTheme" : "lightTheme"}`}>
       <WorkBox onClick={increment} />
       <p data-cy="counter">Count: {count}</p>
       <button onClick={changeTheme}>Change Theme</button>
