@@ -1,8 +1,10 @@
+@use "../abstract/" as *;
+
 :root {
-  $margin-xsmall: 4px;
-  $margin-small: 8px;
-  $margin-medium: 16px;
-  $margin-large: 24px;
+  $margin-xsmall: #{pxToRem(4)};
+  $margin-small: #{pxToRem(8)};
+  $margin-medium: #{pxToRem(16)};
+  $margin-large: #{pxToRem(24)};
 
   --margin-xsmall: #{$margin-xsmall};
   --margin-small: #{$margin-small};

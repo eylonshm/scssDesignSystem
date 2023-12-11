@@ -1,5 +1,5 @@
+@use "../abstract/" as *;
+
 :root {
-  $shadow-small: pxToRem(0) pxToRem(16) pxToRem(32)
-    hsl(var(--color-box-shadow) / 0.02);
-  --shadow-small: #{$shadow-small};
+  --shadow-small: #{pxToRem(0) pxToRem(16) pxToRem(32) var(--color-box-shadow)};
 }

@@ -1,10 +1,12 @@
-:root {
-  $border-radius-xsmall: 4px;
-  $border-radius-small: 8px;
-  $border-radius-medium: 16px;
-  $border-radius-large: 24px;
-  $border-radius-circular: 50%;
+@use "../abstract/" as *;
 
+$border-radius-xsmall: #{pxToRem(4)};
+$border-radius-small: #{pxToRem(8)};
+$border-radius-medium: #{pxToRem(16)};
+$border-radius-large: #{pxToRem(24)};
+$border-radius-circular: 50%;
+
+:root {
   --border-radius-xsmall: #{$border-radius-xsmall};
   --border-radius-small: #{$border-radius-small};
   --border-radius-medium: #{$border-radius-medium};
